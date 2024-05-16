@@ -833,3 +833,7 @@ footer {
   --black: #000000;
   --black-light: #00000018;
 }
+
+textarea{
+  resize: none;
+}
