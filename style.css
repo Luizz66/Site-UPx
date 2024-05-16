@@ -165,14 +165,19 @@ nav {
 }
 
 .feedback-button {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-top: 2rem;
-  padding: 0.9rem 2rem;
+  padding: 0.9rem 0;
   background-color: var(--green);
   color: var(--green-light);
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.feedback-button:hover {
+  transform: scale(1.02);
 }
 
 /* REGIÕES */
@@ -317,7 +322,6 @@ footer {
   }
   .img-footer {
     width: 7.5rem;
-    margin-top: -1rem;
   }
 }
 
@@ -363,26 +367,17 @@ footer {
     left: 0.5rem;
   }
   .p-footer {
-    margin-top: 22rem;
+    margin-top: 26rem;
   }
 }
 
 @media screen and (max-width: 819px) {
-  .ul-pages li a {
-    margin: 0 7px;
-  }
   .img {
     width: 7rem;
-    top: 1.5rem;
-    left: 1.5rem;
   }
   .img-footer {
     width: 7rem;
     margin-top: -10rem;
-    left: 0.5rem;
-  }
-  .p-footer {
-    margin-top: 26rem;
   }
 }
 
@@ -435,7 +430,6 @@ footer {
   .img-footer {
     width: 6.8rem;
     margin-top: -14rem;
-    left: 0.4rem;
   }
   .p-footer {
     margin-top: 32rem;
@@ -454,7 +448,6 @@ footer {
   }
   .img {
     width: 6.4rem;
-    top: 1.5rem;
     left: 1.3rem;
   }
   .img-footer {
@@ -472,9 +465,6 @@ footer {
 }
 
 @media screen and (max-width: 691px) {
-  .ul-pages li a {
-    margin: 0 5px;
-  }
   .img {
     width: 6rem;
     top: 1.5rem;
@@ -571,7 +561,6 @@ footer {
   .img {
     width: 6rem;
     top: 1.5rem;
-    left: 0.9rem;
   }
   .home-header-info {
     margin-top: -2rem;
@@ -662,7 +651,6 @@ footer {
   .content-title {
     margin-top: 1rem;
   }
-
   .ul-pages {
     display: flex;
     flex-direction: column;
@@ -702,7 +690,7 @@ footer {
     flex-direction: column;
   }
   footer .sobre-footer {
-    margin-left: 0;
+    margin-left: 0.3rem;
   }
   footer .contact-footer {
     margin-left: 0;
@@ -726,7 +714,7 @@ footer {
     flex-wrap: wrap;
   }
   footer .sobre-footer {
-    margin-left: 0;
+    margin-left: 0.2rem;
   }
   footer .contact-footer {
     margin-left: 1rem;
@@ -753,14 +741,17 @@ footer {
   .home-header-info h3 {
     font-size: 1.3rem;
   }
+  footer .sobre-footer {
+    margin-left: 0.2rem;
+  }
+  footer .contact-footer {
+    margin-left: 1.7rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  footer .sobre-footer {
-    margin-left: 0;
-  }
   footer .contact-footer {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
   }
   .img-footer {
     width: 5rem;
@@ -771,9 +762,15 @@ footer {
   }
 }
 
+@media screen and (max-width: 300px) {
+  footer .contact-footer {
+    margin-left: 3.5rem;
+  }
+}
+
 @media screen and (max-width: 286px) {
   footer .contact-footer {
-    margin-left: 3rem;
+    margin-left: 4.5rem;
   }
   .p-footer {
     margin-top: 39rem;
@@ -790,7 +787,7 @@ footer {
     padding-top: 1rem;
   }
   footer .contact-footer {
-    margin-left: 4.4rem;
+    margin-left: 5.4rem;
   }
   .img-footer {
     width: 5rem;
@@ -798,6 +795,9 @@ footer {
   }
   footer {
     flex-direction: column;
+  }
+  .p-footer {
+    margin-top: 42rem;
   }
 }
 
@@ -807,7 +807,7 @@ footer {
     margin-top: -30rem;
   }
   footer .contact-footer {
-    margin-left: 6rem;
+    margin-left: 6.5rem;
   }
   .p-footer {
     margin-top: 44rem;
