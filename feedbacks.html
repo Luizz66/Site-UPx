@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://unpkg.com/primeflex@latest/primeflex.css"
     />
+
+
+    <script defer src="./scripts/feedbacks.js"></script>
+
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <title>Site UPx - Feedbacks</title>
   </head>
@@ -38,8 +42,10 @@
       Quem segue as dicas +Energia Sustentável recomenda
     </h2>
 
-    <div class="feedbacks-content">
-      <div class="row">
+    <div class="feedbacks-content grid formgrid p-fluid">
+
+      <div class="row flex gap-2 flex-wrap col-10 justify-content-center">
+  
         <div class="person">
           <p>
             "+Energia Sustentável transformou minha casa em um ambiente
@@ -48,6 +54,7 @@
           </p>
           <p class="person-nome">Amanda</p>
         </div>
+  
         <div class="person">
           <p>
             "Estou impressionada com a facilidade de economizar com a +Energia
@@ -56,9 +63,6 @@
           </p>
           <p class="person-nome">Joana</p>
         </div>
-      </div>
-
-      <div class="row">
         <div class="person">
           <p>
             "Estou muito satisfeito com o atendimento da +Energia Sustentável!!
@@ -73,22 +77,30 @@
             de sustentabilidade, recomendo!"
           </p>
           <p class="person-nome">Raul</p>
-        </div>
       </div>
+  
+  
+  
+  
+      </div>
+      <form class="feedback col-2 flex justify-content-start">
 
-      <div class="feedback">
-        <h3 class="feedback-box-title">Feedback</h3>
-        <div class="feedback-box">
-          <p>Nome</p>
-          <input type="text" />
-          <p>Email</p>
-          <input type="email" />
-          <p>Mensagem</p>
-          <textarea class="feedback-input-message"></textarea>
-          <button class="feedback-button">Enviar</button>
+        <div class="sticky top-0">
+          <h3 class="feedback-box-title ml-5">Feedback</h3>
+          <div class="feedback-box">
+            <p>Nome</p>
+            <input id="nome-mensagem" type="text" />
+            <p>Email</p>
+            <input id="email-mensagem" type="email" />
+            <p>Mensagem</p>
+            <textarea id="corpo-mensagem" class="feedback-input-message"></textarea>
+            <button  id="button-submit" class="feedback-button">Enviar</button>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
+
+
 
     <footer>
       <div class="img-footer">
@@ -112,5 +124,8 @@
         Direitos reservados.
       </p>
     </footer>
+
+
+    
   </body>
 </html>
